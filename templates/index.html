@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+        <meta charset="utf-8" />
+        <title>rssvprasd_urbanstop</title>
+        
+    </head>
+    
+<body class="">
+  <div class='navbar'>
+    <a href="{% url 'base' %}" class='logo'>interview</a>
+    
+</div>
+        {% block nav %}{% endblock nav %}
+        
+
+        {% block viewpost %}{% endblock viewpost %}
+        {% include 'home.html' %}
+  
+       
+  
+          {% block content %}{% endblock content %}
+  
+    
+        {% include 'footer.html' %}
+  
+
+      
+   
+  
+    {% block javascripts %}{% endblock javascripts %}
+  
+</body>
+</html>
